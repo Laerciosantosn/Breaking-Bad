@@ -1,16 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* width: 1080px;
-  margin: 0 auto; */
-  /* position: relative; */
-  /* width: 100%;
-  height: 250px; */
   display: flex;
   align-items: center;
   margin-top: 50px;
-
-  border: 1px solid royalblue;
+  /* position: relative; */
 `;
 
 export const HeaderContainer = styled.header`
@@ -47,6 +41,7 @@ export const HeaderContainer = styled.header`
       &.active {
         background: #006c38;
       }
+
       &.active::before {
         content: '';
 

@@ -15,6 +15,11 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  a {
+    text-decoration: none;
+    color: #FFF;
+  }
+
   body, input, button {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
