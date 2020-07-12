@@ -1,12 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Logo from '../../assets/Logo.png';
+
+import { Container, HeaderContainer } from './style';
 
 const Header: React.FC = () => (
-  <header className="center">
-    <img
-      src="https://occ-0-3247-1567.1.nflxso.net/dnm/api/v6/TsSRXvDuraoJ7apdkH6tsHhf-ZQ/AAAABe_zvD8XuObbSmtilocAfqrZck14O7O_LKxXx2Rb1wtzgWoPaOtTGzMqrckixb7OFeMQWzY5QXuch4NQxcEdlaRlRewEnYg9XYhA.png?r=295"
-      alt="Logo Breacking Bad"
-    />
-  </header>
+  <Container>
+    <HeaderContainer className="center">
+      <img src={Logo} alt="Logo Breacking Bad" />
+      <nav>
+        <Link to="/characters" className="active">
+          Characters
+        </Link>
+
+        <Link to="episodes">Episodes</Link>
+      </nav>
+    </HeaderContainer>
+  </Container>
 );
 
 export default Header;
